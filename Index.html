@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snowtel | Resort nas Montanhas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <a class="logo" href="#inicio">❄ SNOWTEL</a>
+
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#hotel">O hotel</a>
+        <a href="#quartos">Acomodações</a>
+        <a href="#experiencias">Experiências</a>
+        <a class="nav-botao" href="#reservas">Reservar</a>
+    </nav>
+</header>
+
+<section class="hero" id="inicio">
+    <div class="hero-content">
+        <p class="eyebrow">HOSPITALIDADE EM CLIMA DE NEVE</p>
+        <h1>Seu refúgio<br>em um mundo gelado.</h1>
+
+        <p>
+            O Snowtel, um resort temático que une
+            paisagens inspiradas no inverno, conforto,
+            gastronomia e experiências inesquecíveis para
+            famílias, casais e viajantes.
+        </p>
+
+        <a href="#reservas" class="button">Consultar estadia</a>
+    </div>
+</section>
+
+<div class="reserva-area" id="reservas">
+    <div class="reserva">
+        <h2>Planeje sua estadia</h2>
+        <p>Escolha suas datas e descubra uma estimativa para sua viagem.</p>
+
+        <form id="formReserva">
+            <div class="campos">
+                <div class="campo">
+                    <label for="checkin">Check-in</label>
+                    <input type="date" id="checkin" required>
+                </div>
+
+                <div class="campo">
+                    <label for="checkout">Check-out</label>
+                    <input type="date" id="checkout" required>
+                </div>
+
+                <div class="campo">
+                    <label for="hospedes">Hóspedes</label>
+                    <select id="hospedes">
+                        <option value="1">1 hóspede</option>
+                        <option value="2" selected>2 hóspedes</option>
+                        <option value="3">3 hóspedes</option>
+                        <option value="4">4 hóspedes</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="tipoQuarto">Acomodação</label>
+                    <select id="tipoQuarto">
+                        <option value="450">Quarto Clássico</option>
+                        <option value="650">Suíte Snow</option>
+                        <option value="900">Suíte Família</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="reserva-acoes">
+                <span>❄ Sua experiência Snowtel começa aqui.</span>
+                <button class="button button-dark" type="submit">
+                    Calcular estadia
+                </button>
+            </div>
+        </form>
+
+        <div id="resultado" aria-live="polite"></div>
+
+        <p class="aviso">
+            Valores ilustrativos para o projeto acadêmico.
+            A consulta não confirma uma reserva real.
+        </p>
+    </div>
+</div>
+
+<section class="conteudo" id="hotel">
+    <p class="eyebrow">CONHEÇA O SNOWTEL</p>
+    <h2>Mais que um hotel.<br>Uma experiência de inverno.</h2>
+
+    <p class="descricao">
+        O Snowtel é um resort temático inspirado
+        na beleza da neve e das montanhas geladas. combina ambientes elegantes, atendimento acolhedor e
+        serviços planejados para tornar cada hospedagem especial.
+        Nossa proposta é atender famílias, casais, turistas e
+        viajantes a trabalho em um ambiente confortável e marcante.
+    </p>
+</section>
+
+<section class="conteudo" id="quartos">
+    <p class="eyebrow">DESCANSO E CONFORTO</p>
+    <h2>Nossas acomodações</h2>
+    <p class="descricao">Escolha o ambiente ideal para aproveitar sua estadia.</p>
+
+    <div class="quartos">
+        <article class="quarto">
+            <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=900&q=80"
+                 alt="Quarto de hotel confortável">
+            <div class="quarto-info">
+                <h3>Quarto Clássico</h3>
+                <p>Um ambiente confortável para quem procura praticidade, tranquilidade e descanso.</p>
+                <div class="preco">R$ 450 <small>/ noite</small></div>
+            </div>
+        </article>
+
+        <article class="quarto">
+            <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=900&q=80"
+                 alt="Suíte de hotel moderna">
+            <div class="quarto-info">
+                <h3>Suíte Snow</h3>
+                <p>Mais espaço e elegância para uma experiência especial durante a viagem.</p>
+                <div class="preco">R$ 650 <small>/ noite</small></div>
+            </div>
+        </article>
+
+        <article class="quarto">
+            <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=900&q=80"
+                 alt="Acomodação espaçosa de hotel">
+            <div class="quarto-info">
+                <h3>Suíte Família</h3>
+                <p>Uma acomodação espaçosa pensada para famílias e pequenos grupos.</p>
+                <div class="preco">R$ 900 <small>/ noite</small></div>
+            </div>
+        </article>
+    </div>
+</section>
+
+<section class="conteudo experiencias" id="experiencias">
+    <p class="eyebrow">VIVA O INVERNO</p>
+    <h2>Experiências Snowtel</h2>
+
+    <div class="cards">
+        <article class="card">
+            <div class="icone">🏔️</div>
+            <h3>Ambientes temáticos</h3>
+            <p>Decoração inspirada em montanhas nevadas, paisagens de inverno e cenários especiais para fotografias.</p>
+        </article>
+
+        <article class="card">
+            <div class="icone">🍽️</div>
+            <h3>Restaurante</h3>
+            <p>Um espaço gastronômico acolhedor para refeições durante sua hospedagem, com opções variadas.</p>
+        </article>
+
+        <article class="card">
+            <div class="icone">🎿</div>
+            <h3>Lazer e diversão</h3>
+            <p>Atividades temáticas e programação recreativa para diferentes idades e perfis de visitantes.</p>
+        </article>
+    </div>
+</section>
+
+<section class="conteudo servicos">
+    <p class="eyebrow">CUIDAMOS DE CADA DETALHE</p>
+    <h2>Serviços e comodidades</h2>
+
+    <div class="servicos-lista">
+        <div class="servico"><strong>🛎️ Recepção</strong>Atendimento aos hóspedes e suporte durante a estadia.</div>
+        <div class="servico"><strong>📶 Wi-Fi</strong>Conexão à internet nas áreas do hotel.</div>
+        <div class="servico"><strong>🧺 Lavanderia</strong>Serviço de apoio para estadias longas.</div>
+        <div class="servico"><strong>🧹 Limpeza</strong>Organização e cuidado com os ambientes.</div>
+        <div class="servico"><strong>🍴 Room service</strong>Serviço de alimentação nos quartos.</div>
+        <div class="servico"><strong>🌱 Sustentabilidade</strong>Uso consciente de água, energia e recursos.</div>
+    </div>
+</section>
+
+<section class="contato" id="contato">
+    <h2>Venha viver essa experiência.</h2>
+    <p>O Snowtel espera por você para uma estadia especial em clima de neve.</p>
+    <a class="button" href="mailto:contato@snowtel.com">Fale conosco</a>
+</section>
+
+<footer>
+    <a class="logo" href="#inicio">❄ SNOWTEL</a>
+    <p>Conforto, lazer e hospitalidade em clima de neve.</p>
+    <small>Projeto acadêmico de hotelaria — informações e preços ilustrativos.</small>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
